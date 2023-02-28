@@ -1,0 +1,15 @@
+D:\c#-projects\HW28_02_23\HW28_02_23\bin\Debug\net7.0\HW28_02_23.exe
+D:\c#-projects\HW28_02_23\HW28_02_23\bin\Debug\net7.0\HW28_02_23.deps.json
+D:\c#-projects\HW28_02_23\HW28_02_23\bin\Debug\net7.0\HW28_02_23.runtimeconfig.json
+D:\c#-projects\HW28_02_23\HW28_02_23\bin\Debug\net7.0\HW28_02_23.dll
+D:\c#-projects\HW28_02_23\HW28_02_23\bin\Debug\net7.0\HW28_02_23.pdb
+D:\c#-projects\HW28_02_23\HW28_02_23\obj\Debug\net7.0\HW28_02_23.csproj.AssemblyReference.cache
+D:\c#-projects\HW28_02_23\HW28_02_23\obj\Debug\net7.0\HW28_02_23.GeneratedMSBuildEditorConfig.editorconfig
+D:\c#-projects\HW28_02_23\HW28_02_23\obj\Debug\net7.0\HW28_02_23.AssemblyInfoInputs.cache
+D:\c#-projects\HW28_02_23\HW28_02_23\obj\Debug\net7.0\HW28_02_23.AssemblyInfo.cs
+D:\c#-projects\HW28_02_23\HW28_02_23\obj\Debug\net7.0\HW28_02_23.csproj.CoreCompileInputs.cache
+D:\c#-projects\HW28_02_23\HW28_02_23\obj\Debug\net7.0\HW28_02_23.dll
+D:\c#-projects\HW28_02_23\HW28_02_23\obj\Debug\net7.0\refint\HW28_02_23.dll
+D:\c#-projects\HW28_02_23\HW28_02_23\obj\Debug\net7.0\HW28_02_23.pdb
+D:\c#-projects\HW28_02_23\HW28_02_23\obj\Debug\net7.0\HW28_02_23.genruntimeconfig.cache
+D:\c#-projects\HW28_02_23\HW28_02_23\obj\Debug\net7.0\ref\HW28_02_23.dll
