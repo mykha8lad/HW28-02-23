@@ -1,4 +1,4 @@
-﻿
+﻿using System.Linq;
 
 #region 1
 /*
@@ -14,8 +14,7 @@ else
 #endregion
 
 #region 2
-using System.Linq;
-
+/*
 int countLettersInOffer = 0;
 int countVowelsInOffer = 0;
 int countConsonantsInOffer = 0;
@@ -25,15 +24,10 @@ string offer = "Это...\nНу ты короче\nв общем это\nтак-
 Console.WriteLine(offer);
 
 string[] words = offer.Replace('\n', ' ').Replace(",", "").Replace(".", "").Replace("-", "").Split(" ");
-foreach (string item in words)
-{
-    Console.Write($"{item} ");
-}
-
 foreach (string word in words)
 {
     countLettersInOffer += word.Length;
-    foreach (char letter in word)
+    foreach (char letter in word.ToLower())
     {
         if (vowelsLetters.Contains(letter))
             countVowelsInOffer++;
@@ -45,4 +39,36 @@ foreach (string word in words)
 Console.WriteLine($"\nВсего символов: {offer.Length}");
 Console.WriteLine($"Из них {words.Length} слов(а)");
 Console.WriteLine($"{countLettersInOffer} букв: {countVowelsInOffer} гласных и {countConsonantsInOffer} согласных");
+*/
+#endregion
+
+#region 3
+/*
+string str1 = "Аз есмь строка, живу я, мерой остр.";
+string str2 = "За семь морей ростка я вижу рост!";
+
+char[] charStr1 = str1.Replace(",", "").Replace(".", "").Replace("!", "").Replace(" ", "").ToLower().ToCharArray();
+char[] charStr2 = str2.Replace(",", "").Replace(".", "").Replace("!", "").Replace(" ", "").ToLower().ToCharArray();
+
+if (charStr1.Length != charStr2.Length)
+{
+    Console.WriteLine("Предложения имеют разную длину");
+    return;
+}
+
+Array.Sort(charStr1);
+Array.Sort(charStr2);
+
+bool flag = true;
+for (int letter = 0; letter < charStr1.Length; letter++)
+{
+    if (charStr1[letter] != charStr2[letter])
+        flag = false;
+}
+
+if (!flag)
+    Console.WriteLine($"Предложения \"{str1}\" и \"{str2}\" не являются анаграммами");
+else
+    Console.WriteLine($"Предложения \"{str1}\" и \"{str2}\" являются анаграммами");
+*/
 #endregion
