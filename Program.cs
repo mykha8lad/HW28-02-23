@@ -14,7 +14,7 @@ else
 #endregion
 
 #region 2
-
+/*
 int countLettersInOffer = 0; // всего символов
 int countVowelsInOffer = 0; // гласных
 int countConsonantsInOffer = 0; // согласных
@@ -52,10 +52,8 @@ Console.WriteLine($"{countLettersInOffer} букв: {countVowelsInOffer} гла�
 Console.WriteLine($"Знаков пунктуации: {countPunctuationMarks}");
 Console.WriteLine($"Числовых значений: {countDigets}");
 Console.WriteLine($"Других символов: {countEtcSymbols}");
-
+*/
 #endregion
-
-
 
 #region 3
 /*
