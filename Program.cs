@@ -14,22 +14,32 @@ else
 #endregion
 
 #region 2
-/*
-int countLettersInOffer = 0;
-int countVowelsInOffer = 0;
-int countConsonantsInOffer = 0;
+
+int countLettersInOffer = 0; // всего символов
+int countVowelsInOffer = 0; // гласных
+int countConsonantsInOffer = 0; // согласных
+int countPunctuationMarks = 0; // знаков пунктуации
+int countDigets = 0; // числовых значений
+int countEtcSymbols = 0; // других символов
 char[] vowelsLetters = { 'а', 'и', 'о', 'у', 'ы', 'я', 'э', 'ю', 'е', 'ё' };
 
-string offer = "Это...\nНу ты короче\nв общем это\nтак-то ничего, то есть\nя хочу сказать ну шо ты\nв целом, там ну глаза,\nволосы, я конечно\nне поэт, зато ты\nпрям стих\nёлы палы";
+string offer = "Это...\nНу ты короче\nв общем это\nтак-то ничего, то есть\nя хочу ск@з@ть ну шо ты\nв целом, там ну глаза,\nволосы, я конечно\nне поэт, зато ты\nпрям стих\nёлы палы!1!";
 Console.WriteLine(offer);
+
+foreach (char symbol in offer)
+{ 
+    if (Char.IsDigit(symbol)) countDigets++;
+    if (Char.IsPunctuation(symbol)) countPunctuationMarks++;
+    if ((symbol >= 34 && symbol <= 64 && !Char.IsDigit(symbol)) && symbol != 39 && symbol != 45 && symbol != 46 && symbol != 44) countEtcSymbols++; // проверка что не число, и не один из символов 39 - '`' 44 - ',' 45 - '-' 46 - '.' по таблице ascii
+}
 
 string[] words = offer.Replace('\n', ' ').Replace(",", "").Replace(".", "").Replace("-", "").Split(" ");
 foreach (string word in words)
 {
-    countLettersInOffer += word.Length;
+    countLettersInOffer += word.Length; // подсчет букв
     foreach (char letter in word.ToLower())
     {
-        if (vowelsLetters.Contains(letter))
+        if (vowelsLetters.Contains(letter)) // если массив гласных содержит этот символ
             countVowelsInOffer++;
         else
             countConsonantsInOffer++;
@@ -39,8 +49,13 @@ foreach (string word in words)
 Console.WriteLine($"\nВсего символов: {offer.Length}");
 Console.WriteLine($"Из них {words.Length} слов(а)");
 Console.WriteLine($"{countLettersInOffer} букв: {countVowelsInOffer} гласных и {countConsonantsInOffer} согласных");
-*/
+Console.WriteLine($"Знаков пунктуации: {countPunctuationMarks}");
+Console.WriteLine($"Числовых значений: {countDigets}");
+Console.WriteLine($"Других символов: {countEtcSymbols}");
+
 #endregion
+
+
 
 #region 3
 /*
